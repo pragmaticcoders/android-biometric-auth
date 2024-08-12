@@ -25,10 +25,11 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.fragment.app.FragmentActivity
 import com.pragmaticcoders.biometrics_auth.Biometrics.AuthenticationResult
 import com.pragmaticcoders.biometrics_auth.ui.theme.Biometrics_authTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity : FragmentActivity() {
 
     private val biometrics by lazy { Biometrics() }
 
